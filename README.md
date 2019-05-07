@@ -1,4 +1,6 @@
-# spring-quartz-scheduler
+![Building web applications with Spring Boot and Kotlin](./_media/quartz-scheduler-logo.jpg)
+
+# Scheduling in Spring with Quartz
 
 initializr
 https://start.spring.io
