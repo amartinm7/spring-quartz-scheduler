@@ -24,7 +24,7 @@ class AutoWiringSpringBeanJobFactory : SpringBeanJobFactory(), ApplicationContex
     @Throws(Exception::class)
     override fun createJobInstance(bundle: TriggerFiredBundle): Any {
         val job = super.createJobInstance(bundle)
-        beanFactory.autowireBean(job) //inject the usecase or service beans into the job
+        beanFactory.autowireBean(job) //injects the usecase or service beans into the job
         return job
     }
 
