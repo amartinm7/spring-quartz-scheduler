@@ -9,10 +9,7 @@ gradle cleanIdea idea
 ```
 or choose import existing project and then select build.gradle
 
-https://www.baeldung.com/spring-quartz-schedule
-
-
-
+## 
 The picture:
 - Define the use case class or service class
 - Define the job class which implements the Job interface and inject the use case class created before
@@ -22,3 +19,5 @@ The picture:
 - Define a quartz.properties with the jobStore configuration.
 - end
  
+ ## Quartz Scheduler 
+ https://www.baeldung.com/spring-quartz-schedule
