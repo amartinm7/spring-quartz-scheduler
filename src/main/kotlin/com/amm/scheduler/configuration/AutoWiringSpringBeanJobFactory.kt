@@ -7,6 +7,10 @@ import org.springframework.context.ApplicationContext
 import org.springframework.context.ApplicationContextAware
 import org.springframework.scheduling.quartz.SpringBeanJobFactory
 
+/**
+ * Enables spring autowire feature for the job beans.
+ * So you can inject use cases into the job beans
+ */
 class AutoWiringSpringBeanJobFactory : SpringBeanJobFactory(), ApplicationContextAware {
 
     @Transient
@@ -20,7 +24,7 @@ class AutoWiringSpringBeanJobFactory : SpringBeanJobFactory(), ApplicationContex
     @Throws(Exception::class)
     override fun createJobInstance(bundle: TriggerFiredBundle): Any {
         val job = super.createJobInstance(bundle)
-        beanFactory.autowireBean(job)
+        beanFactory.autowireBean(job) //inject the usecase or service beans into the job
         return job
     }
 
