@@ -1,3 +1,13 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath "com.avast.gradle:gradle-docker-compose-plugin:0.9.4"
+	}
+}
+
+
 plugins {
 	id 'org.jetbrains.kotlin.plugin.jpa' version '1.2.71'
 	id 'org.springframework.boot' version '2.1.4.RELEASE'
@@ -16,6 +26,7 @@ apply plugin: 'kotlin-allopen'
 apply plugin: 'kotlin-jpa'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'application'
+apply from: 'gradle/build-integration-test.gradle'
 
 group = 'com.amm.scheduler'
 version = '0.0.1-SNAPSHOT'
