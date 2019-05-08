@@ -24,7 +24,7 @@ The picture:
 ## Run it!
 ```bash
 docker-compose up
-./gradlew build run
+./gradlew build integrationTest run
 ```
 
 ##
