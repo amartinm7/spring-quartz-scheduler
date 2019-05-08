@@ -26,6 +26,11 @@ The picture:
 docker-compose up
 ./gradlew build run
 ```
+
+##
+```bash
+docker-compose down
+```
  
  ## Quartz Scheduler 
  https://www.baeldung.com/spring-quartz-schedule
