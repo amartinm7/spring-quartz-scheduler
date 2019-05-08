@@ -1,0 +1,22 @@
+spring:
+  main:
+    banner-mode: "OFF"
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+       hibernate:
+         jdbc:
+          lob:
+            non_contextual_creation: true
+  profiles:
+    active: dev
+
+server:
+  port: 8000
+  compression:
+    enabled: true
+    mime-types: application/json
+
+springfox.documentation.swagger.v2.path: /schema

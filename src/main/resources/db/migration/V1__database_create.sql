@@ -1,0 +1,10 @@
+CREATE TABLE HELLO
+(
+  id SERIAL,
+  email VARCHAR(80) NOT NULL,
+  created_at TIMESTAMP NOT NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE INDEX email_index ON HELLO(email);
+

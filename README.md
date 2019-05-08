@@ -20,6 +20,12 @@ The picture:
 - Define a scheduler and register the different triggers
 - Define a quartz.properties with the jobStore configuration.
 - end
+
+## Run it!
+```bash
+docker-compose up
+./gradlew build run
+```
  
  ## Quartz Scheduler 
  https://www.baeldung.com/spring-quartz-schedule
