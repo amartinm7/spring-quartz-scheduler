@@ -34,3 +34,8 @@ docker-compose down
  
  ## Quartz Scheduler 
  https://www.baeldung.com/spring-quartz-schedule
+ 
+ ### Install gradle wrapper
+```bash
+gradle wrapper
+```
